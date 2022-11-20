@@ -2,10 +2,14 @@ package org.exampl.ManagerFilms.Manager;
 
 public class ManagerFilms {
     private String[] movies = new String[0];
+
     private int limit;
+
     public ManagerFilms(int limit) {
+
         this.limit = limit;
     }
+
     public ManagerFilms() {
         this.limit = 10;
     }
@@ -17,7 +21,9 @@ public class ManagerFilms {
         tmp[tmp.length - 1] = movie;
         movies = tmp;
     }
+
     public String[] findAll() {
+
         return movies;
     }
 
